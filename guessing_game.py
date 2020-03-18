@@ -30,9 +30,7 @@ def start_game():
             print("The current high score is, ", high_score_guess)
         else:
             print("Try to get score that is 3 or less")
-            print("The current score is, ", high_score_guess, "\n")
-            
-            #check to make sure the user inputs the correct number in range          
+            print("The current score is, ", high_score_guess, "\n")       
 
         while guess != number:
             try:
@@ -60,7 +58,6 @@ def start_game():
         print("Got it!\n")
         print("The number is: ", number)
         print("It took you",attemps,"to get the right number! GOOD JOB!\n")
-        #answer = input("Would you like to play? \n(Y)es/(N)o ")
         games_play += 1
         if games_play == 1:
             high_score_guess = attemps
